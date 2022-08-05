@@ -31,7 +31,14 @@
 */
 
 //CODE HERE
-
+const pizza = {
+    name: `pan pizza`,
+    price: 7,
+    category: `pizza`,
+    popularity: 8,
+    rating: 9,
+    tags: [`pan`, `deep`, `dish`],
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -41,7 +48,7 @@
     First, log the popularity of pizza. 
     Use dot notation to access the value.
 */
-
+console.log(pizza.popularity)
 //CODE HERE
 
 
@@ -51,7 +58,7 @@
     Use a combination of dots and brackets to
     get the value.
 */
-
+console.log(pizza.tags[1])
 //CODE HERE
 
 
@@ -88,7 +95,7 @@
 */
 
 //CODE HERE
-
+const foodArr = [`thin`, 6, `pizza`, 4, 3, [`thin`, `light`]]
 
 
 //////////////////PROBLEM 4////////////////////
