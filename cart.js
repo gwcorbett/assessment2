@@ -35,7 +35,7 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.reduce((acc, cur) => acc + cur.price, 0)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -54,8 +54,10 @@ const cart = [
 */
 
 //CODE HERE
-
-
+function calcFinalPrice(cartTotal, couponValue, tax) {
+    return cartTotal + (cartTotal * tax) - couponValue
+}
+console.log(calcFinalPrice(10, 2, .1))
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -79,6 +81,11 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
+First name - string - need to know customer name
+last name - string - need to know last name of customer
+street address - string - need to know where customer lives (delievry, marketing...etc)
+zip code - number - category area for sales
+
 
 */
 
@@ -88,3 +95,9 @@ const cart = [
 */
 
 //CODE HERE
+const customer = {
+    firstName: 'Jimmy',
+    lastName: 'Beaker',
+    streetAddress: '22 E Side Swamp',
+    zipCode: 23451
+}

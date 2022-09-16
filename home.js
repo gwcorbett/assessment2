@@ -83,9 +83,13 @@ canWeDeliver(zipCode)
 */
 
 // CODE HERE
-const canWeDeliverTwo = zipCode {
+function canWeDeliverTwo(zipCode) {
     for (let i = 0; i < deliveryAreaZipCodes.length; i++){
-
+        if(zipCode === deliveryAreaZipCodes[i]){
+            return 'You in our delivery zone!'
+        } else {
+            return 'Sorry, we can not deliver to that address'
+        }
     }
 }
 
@@ -123,7 +127,7 @@ const deals = [
 */
 
 //CODE HERE
-
+deals[0].title = deals[0].title.replace('15', '10')
 
 
 /*
@@ -140,3 +144,5 @@ const deals = [
 */
 
 //CODE HERE
+
+deals[1].desc = deals[1].desc.replace('March', 'April').trim()
